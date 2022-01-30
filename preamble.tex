@@ -1,0 +1,104 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PANDOC SPECIFIC SHIT, TAKEN FROM ANOTHER TEMPLATE...
+
+%Deal with margins and other geometry stuff
+\usepackage[margin=1.1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{MinionPro-Regular.otf}[
+Path = /Library/Fonts/minion-pro-cufonfonts/,
+BoldFont = MinionPro-Bold.otf,
+ItalicFont = MinionPro-It.otf,
+BoldItalicFont  = MinionPro-BoldIt.otf]
+\usepackage[labelfont=bf]{caption}
+
+
+%Double-spacing or whatever...
+\usepackage{setspace}
+\setstretch{1.5}
+
+
+\usepackage{amssymb,amsmath}
+\usepackage{halloweenmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{enumitem}
+\usepackage{chemfig}
+
+%For LIST spacing
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlist[itemize]{labelsep=1em, leftmargin=*}
+\renewcommand\labelitemi{\(\mathwitch\)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LUCY'S DOCUMENT PREAMBLE AND PACKAGES
+
+% no widows or orphans
+\widowpenalty10000
+\clubpenalty10000
+
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+
+\usepackage{lastpage}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{blackbox}[1]{
+  colback=light-gray,
+  colframe=black,
+  coltext=black,
+  boxsep=2pt,
+  arc=4pt,
+  title={#1}, after= {\vspace{3mm}}}
+
+\newtcolorbox{mybox}[2][]{colback=white,
+colframe=white!75!black,colbacktitle=black!65!white, toptitle=2pt, before={\vspace{-0.8cm}}, after= {\vspace{-1cm}}, title={#2},#1}
+
+%\usepackage[round]{natbib}
+\usepackage[natbibapa]{apacite} 
+\usepackage[hyphens]{url}
+
+%Set paragraph indent and between paragraph spacing
+\setlength\parindent{0pt}
+\setlength{\parskip}{4.5pt}
+
+%Deal with titles and make them less stupid and ugly
+\usepackage{titlesec}
+\titleformat{\section}[block]{\bfseries\sc\filcenter}{}{1em}{}
+\titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
+\setcounter{secnumdepth}{0}
+
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=violet,
+    filecolor=cyan,      
+    urlcolor=violet,
+    citecolor = black
+}
+
+%Need all these for graphics and tables
+\usepackage{marginnote}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{wallpaper}
+\usepackage{float}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+
+%Header and footer junk
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[C]{}{}
+\fancyhead[L]{Biol 002: Cellular Basis of Life \(\cdot\) Spring 2022}
+\fancyhead[R]{\leftmark}
+\fancyfoot[L]{\tiny{\textit{Version date: \today\\Lucy Delaney}}}
+    \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[C]{}

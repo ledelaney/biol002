@@ -1,0 +1,41 @@
+# Metabolism
+
+>I merely took the energy it takes to pout and wrote some blues.  
+_Duke Ellington_
+
+## 12: The Catabolic World and Energy {-}
+
++ Energy, entropy, and self-organization
++ Living systems must harness energy and use it to perform work in order to live
++ Redox reactions and free energy
++ Metabolism-like reactions could have occurred naturally in early oceans, before the first organisms evolved
+
+## 13: Enzymes {-}
+
++ The importance of catalyzing reactions for the business of life
++ Living organisms must perform work in an orderly way at a particular time
++ Examples of stuff enzymes do
++ Substrate binding
++ Inhibitors and activators
++ Factors affecting enzyme function
+
+## 14: Photosynthesis {-}
+
++ Overview of the chloroplast
++ How plants capture energy from sunlight
++ The overview of the process of photosynthesis
++ Focus on this in terms of how energy capture first developed in living organisms
+
+## 15: Cellular Respiration {-}
+
++ Overview of the mitochondria
++ Glycolysis
++ Respiration
++ Fermentation
++ Similarities with photosynthesis
+
+## 16: Why Metabolism First? {-}
+
++ Zinc world, iron-sulfur world, clay hypotheses
++ Summarize evidence for metabolism first
++ But without the ability to store _genetic_ information, you cannot reliably transmit components that harness energy!

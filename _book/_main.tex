@@ -1,0 +1,789 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{report}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Biol 002: Cellular Basis of Life},
+  pdfauthor={Lucy Delaney},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PANDOC SPECIFIC SHIT, TAKEN FROM ANOTHER TEMPLATE...
+
+%Deal with margins and other geometry stuff
+\usepackage[margin=1.1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{MinionPro-Regular.otf}[
+Path = /Library/Fonts/minion-pro-cufonfonts/,
+BoldFont = MinionPro-Bold.otf,
+ItalicFont = MinionPro-It.otf,
+BoldItalicFont  = MinionPro-BoldIt.otf]
+\usepackage[labelfont=bf]{caption}
+
+
+%Double-spacing or whatever...
+\usepackage{setspace}
+\setstretch{1.5}
+
+
+\usepackage{amssymb,amsmath}
+\usepackage{halloweenmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{enumitem}
+\usepackage{chemfig}
+
+%For LIST spacing
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlist[itemize]{labelsep=1em, leftmargin=*}
+\renewcommand\labelitemi{\(\mathwitch\)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LUCY'S DOCUMENT PREAMBLE AND PACKAGES
+
+% no widows or orphans
+\widowpenalty10000
+\clubpenalty10000
+
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+
+\usepackage{lastpage}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{blackbox}[1]{
+  colback=light-gray,
+  colframe=black,
+  coltext=black,
+  boxsep=2pt,
+  arc=4pt,
+  title={#1}, after= {\vspace{3mm}}}
+
+\newtcolorbox{mybox}[2][]{colback=white,
+colframe=white!75!black,colbacktitle=black!65!white, toptitle=2pt, before={\vspace{-0.8cm}}, after= {\vspace{-1cm}}, title={#2},#1}
+
+%\usepackage[round]{natbib}
+\usepackage[natbibapa]{apacite} 
+\usepackage[hyphens]{url}
+
+%Set paragraph indent and between paragraph spacing
+\setlength\parindent{0pt}
+\setlength{\parskip}{4.5pt}
+
+%Deal with titles and make them less stupid and ugly
+\usepackage{titlesec}
+\titleformat{\section}[block]{\bfseries\sc\filcenter}{}{1em}{}
+\titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
+\setcounter{secnumdepth}{0}
+
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=violet,
+    filecolor=cyan,      
+    urlcolor=violet,
+    citecolor = black
+}
+
+%Need all these for graphics and tables
+\usepackage{marginnote}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{wallpaper}
+\usepackage{float}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+
+%Header and footer junk
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[C]{}{}
+\fancyhead[L]{Biol 002: Cellular Basis of Life \(\cdot\) Spring 2022}
+\fancyhead[R]{\leftmark}
+\fancyfoot[L]{\tiny{\textit{Version date: \today\\Lucy Delaney}}}
+    \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[C]{}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\title{Biol 002: Cellular Basis of Life}
+\author{Lucy Delaney}
+\date{}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{welcome-to-biol-002-lecture}{%
+\chapter*{Welcome to Biol 002 Lecture!}\label{welcome-to-biol-002-lecture}}
+\addcontentsline{toc}{chapter}{Welcome to Biol 002 Lecture!}
+
+\textbf{Instructor:} Dr.~Lucy Delaney (\texttt{lucyd@ucr.edu})\\
+\textbf{Time:} MWF 5:00pm-5:50pm\\
+\textbf{Classroom:} Bournes Hall B118\\
+\textbf{Office Hours:} TBD
+
+\hypertarget{navigating-this-course}{%
+\chapter*{Navigating this Course}\label{navigating-this-course}}
+\addcontentsline{toc}{chapter}{Navigating this Course}
+
+\hypertarget{the-birth-of-the-universe}{%
+\chapter{The Birth of the Universe}\label{the-birth-of-the-universe}}
+
+\begin{quote}
+In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.\\
+\emph{Douglas Adams, The Restauran at the End of the Universe}
+\end{quote}
+
+\hypertarget{the-big-bang}{%
+\section*{1: The Big Bang}\label{the-big-bang}}
+\addcontentsline{toc}{section}{1: The Big Bang}
+
+\begin{itemize}
+\tightlist
+\item
+  Life exists as it does because of events that occurred 13 billion years ago
+\item
+  The birth of the universe dictated the physical laws that govern our construction
+\item
+  To understand life we must first understand the physical laws of the universe
+\item
+  What is the universe?
+\item
+  Is there a multiverse?
+\item
+  The singularity that birthed the universe
+\item
+  Inflation and the four fundamental forces
+\item
+  Cooling creates antimatter and matter, matter prevails
+\end{itemize}
+
+\hypertarget{the-formation-of-matter}{%
+\section*{2: The Formation of Matter}\label{the-formation-of-matter}}
+\addcontentsline{toc}{section}{2: The Formation of Matter}
+
+\begin{itemize}
+\tightlist
+\item
+  Matter prevails
+\item
+  What is matter?
+\item
+  The majority of ordinary matter in the universe is found in atomic nuclei, which are made of neutrons and protons
+\item
+  Describe an atom and the periodic table
+\item
+  Describe how nuclear fusion works and how stars create heavier elements
+\end{itemize}
+
+\hypertarget{our-pale-blue-dot}{%
+\section*{3: Our Pale Blue Dot}\label{our-pale-blue-dot}}
+\addcontentsline{toc}{section}{3: Our Pale Blue Dot}
+
+\begin{itemize}
+\tightlist
+\item
+  Asymmetry after the Big Bang creates gas pockets that birth galaxies
+\item
+  Our galaxy is very old
+\item
+  Talk about the Milky Way, the SMBH at the center, and the birth of our sun
+\item
+  How supernova leave remnants of metallic elements suitable for terrestrial plants
+\item
+  The Grand Tack and Jupiter
+\item
+  Our inner solar system
+\end{itemize}
+
+\hypertarget{the-scene-on-early-earth}{%
+\section*{4: The Scene on Early Earth}\label{the-scene-on-early-earth}}
+\addcontentsline{toc}{section}{4: The Scene on Early Earth}
+
+\begin{itemize}
+\tightlist
+\item
+  The Earth is formed 4.5 billion years ago
+\item
+  The giant impact hypothesis states that shortly after formation of an initial crust, the proto-Earth was impacted by a smaller protoplanet, which ejected part of the mantle and crust into space and created the Moon
+\item
+  The moon stabilizes the Earth (important for life)
+\item
+  Late heavy bombardment
+\item
+  First land
+\item
+  First oceans and atmosphere---water is important for life on Earth
+\item
+  Life emerges from abiotic molecules interacting in the ocean
+\end{itemize}
+
+\hypertarget{defining-life}{%
+\section*{5: Defining Life}\label{defining-life}}
+\addcontentsline{toc}{section}{5: Defining Life}
+
+\begin{itemize}
+\tightlist
+\item
+  There is currently no consensus on what life actually is
+\item
+  Why is it so difficult to define life?
+\item
+  Historical perspectives
+\item
+  Life from a biological perspective
+\item
+  Life from a physics perspective
+\item
+  Viruses and other confusing entities
+\end{itemize}
+
+\hypertarget{biological-molecules}{%
+\section*{6: Biological Molecules}\label{biological-molecules}}
+\addcontentsline{toc}{section}{6: Biological Molecules}
+
+\begin{itemize}
+\tightlist
+\item
+  All living (whatever life is) organisms are essentially made of the same stuff
+\item
+  Carbohydrates provide energy
+\item
+  Nucleic acids store information
+\item
+  Proteins made of amino acids do it all
+\item
+  Lipids, while not technically polymers, form all our membranes
+\item
+  Miller and Urey showed you could make some of this stuff based on what was available on early earth
+\end{itemize}
+
+\hypertarget{encapsulation}{%
+\chapter{Encapsulation}\label{encapsulation}}
+
+\hypertarget{the-lipid-world-and-protocells}{%
+\section*{7: The Lipid World and Protocells}\label{the-lipid-world-and-protocells}}
+\addcontentsline{toc}{section}{7: The Lipid World and Protocells}
+
+\begin{itemize}
+\tightlist
+\item
+  Water on early Earth and the importance of polar covalent bonds
+\item
+  In aqueous environments lipids spontaneously form micelles and membranes
+\item
+  Why membranes are important for biological life
+\item
+  The second law of thermodynamics requires that the universe move in a direction in which entropy increases, yet life is distinguished by its great degree of organization. Therefore, a boundary is needed to separate life processes from non-living matter
+\item
+  Encapsulation enables increased solubility of the contained cargo within the capsule and storage of energy in an electrochemical gradient
+\item
+  As the lipid bilayer of membranes is impermeable to most hydrophilic molecules (dissolved by water), cells have membrane transport-systems that achieve the import of nutritive molecules as well as the export of waste
+\end{itemize}
+
+\hypertarget{cell-membranes}{%
+\section*{8: Cell Membranes}\label{cell-membranes}}
+\addcontentsline{toc}{section}{8: Cell Membranes}
+
+\begin{itemize}
+\tightlist
+\item
+  Cell theory and history
+\item
+  Cell membrane theory and history
+\item
+  Composition and fluid mosaic model
+\item
+  Permeability
+\end{itemize}
+
+\hypertarget{prokaryotic-cells}{%
+\section*{9: Prokaryotic Cells}\label{prokaryotic-cells}}
+\addcontentsline{toc}{section}{9: Prokaryotic Cells}
+
+\begin{itemize}
+\tightlist
+\item
+  Prokaryotes thought to be the oldest cell types that evolved from some kind of protocell
+\item
+  The earliest prokaryotes found in the fossil record
+\item
+  Historical discovery of prokaryotes
+\item
+  A tour of the prokaryotic cell
+\item
+  Where prokaryotes fit on the tree of life
+\end{itemize}
+
+\hypertarget{eukaryotic-cells}{%
+\section*{10: Eukaryotic Cells}\label{eukaryotic-cells}}
+\addcontentsline{toc}{section}{10: Eukaryotic Cells}
+
+\begin{itemize}
+\tightlist
+\item
+  The emergence of eukaryotes in Earth's history
+\item
+  They contain discrete organelles that can carry out tasks
+\item
+  A broad overview of eukaryotic organelles and functions
+\item
+  The evolutionary relationship between prokaryotic and eukaryotic cells
+\item
+  Compare and contrast prokaryotes and eukaryotes
+\end{itemize}
+
+\hypertarget{why-membranes-first}{%
+\section*{12: Why Membranes First?}\label{why-membranes-first}}
+\addcontentsline{toc}{section}{12: Why Membranes First?}
+
+\begin{itemize}
+\tightlist
+\item
+  Summarize evidence for the lipid world
+\item
+  Why membranes are important for the origin of life
+\item
+  But encapsulaton alone does not account for the energy needed to maintain ordered structures in a universe driven toward entropy!
+\end{itemize}
+
+\hypertarget{metabolism}{%
+\chapter{Metabolism}\label{metabolism}}
+
+\begin{quote}
+I merely took the energy it takes to pout and wrote some blues.\\
+\emph{Duke Ellington}
+\end{quote}
+
+\hypertarget{the-catabolic-world-and-energy}{%
+\section*{12: The Catabolic World and Energy}\label{the-catabolic-world-and-energy}}
+\addcontentsline{toc}{section}{12: The Catabolic World and Energy}
+
+\begin{itemize}
+\tightlist
+\item
+  Energy, entropy, and self-organization
+\item
+  Living systems must harness energy and use it to perform work in order to live
+\item
+  Redox reactions and free energy
+\item
+  Metabolism-like reactions could have occurred naturally in early oceans, before the first organisms evolved
+\end{itemize}
+
+\hypertarget{enzymes}{%
+\section*{13: Enzymes}\label{enzymes}}
+\addcontentsline{toc}{section}{13: Enzymes}
+
+\begin{itemize}
+\tightlist
+\item
+  The importance of catalyzing reactions for the business of life
+\item
+  Living organisms must perform work in an orderly way at a particular time
+\item
+  Examples of stuff enzymes do
+\item
+  Substrate binding
+\item
+  Inhibitors and activators
+\item
+  Factors affecting enzyme function
+\end{itemize}
+
+\hypertarget{photosynthesis}{%
+\section*{14: Photosynthesis}\label{photosynthesis}}
+\addcontentsline{toc}{section}{14: Photosynthesis}
+
+\begin{itemize}
+\tightlist
+\item
+  Overview of the chloroplast
+\item
+  How plants capture energy from sunlight
+\item
+  The overview of the process of photosynthesis
+\item
+  Focus on this in terms of how energy capture first developed in living organisms
+\end{itemize}
+
+\hypertarget{cellular-respiration}{%
+\section*{15: Cellular Respiration}\label{cellular-respiration}}
+\addcontentsline{toc}{section}{15: Cellular Respiration}
+
+\begin{itemize}
+\tightlist
+\item
+  Overview of the mitochondria
+\item
+  Glycolysis
+\item
+  Respiration
+\item
+  Fermentation
+\item
+  Similarities with photosynthesis
+\end{itemize}
+
+\hypertarget{why-metabolism-first}{%
+\section*{16: Why Metabolism First?}\label{why-metabolism-first}}
+\addcontentsline{toc}{section}{16: Why Metabolism First?}
+
+\begin{itemize}
+\tightlist
+\item
+  Zinc world, iron-sulfur world, clay hypotheses
+\item
+  Summarize evidence for metabolism first
+\item
+  But without the ability to store \emph{genetic} information, you cannot reliably transmit components that harness energy!
+\end{itemize}
+
+\hypertarget{heredity}{%
+\chapter{Heredity}\label{heredity}}
+
+\hypertarget{the-rna-world-and-genetic-information}{%
+\section*{17: The RNA World and Genetic Information}\label{the-rna-world-and-genetic-information}}
+\addcontentsline{toc}{section}{17: The RNA World and Genetic Information}
+
+\begin{itemize}
+\tightlist
+\item
+  Introduce the structure of RNA and its properties, including its ability to catalyze reactions
+\item
+  Ribosomes are largely made of RNA, and ribonucleotide moieties in many coenzymes, such as acetyl-CoA, NADH, FADH, and F420, may be surviving remnants of covalently bound coenzymes in an RNA world
+\item
+  Explain how genes code for phenotypes
+\item
+  Explain why genetic information is necessary for evolution to occur
+\item
+  RNA not super-great for complex life information storage, touch on that
+\item
+  If the RNA world existed, it was probably followed by an age characterized by the evolution of ribonucleoproteins (RNP world), which in turn ushered in the era of DNA and longer proteins
+\item
+  Introduce the structure of DNA
+\end{itemize}
+
+\hypertarget{dna-replication}{%
+\section*{18: DNA Replication}\label{dna-replication}}
+\addcontentsline{toc}{section}{18: DNA Replication}
+
+\begin{itemize}
+\tightlist
+\item
+  Strand complementarity and semi-conservative replication
+\item
+  DNA polymerase and replication machinery
+\item
+  Initiation, elongation, termination (leading/lagging strand, replication fork, and necessary enzymes)
+\item
+  Regulation and proofreading
+\end{itemize}
+
+\hypertarget{transcription}{%
+\section*{19: Transcription}\label{transcription}}
+\addcontentsline{toc}{section}{19: Transcription}
+
+\begin{itemize}
+\tightlist
+\item
+  DNA is stored in the nucleus as chromatin
+\item
+  Chromatin unraveled and mRNA is made
+\item
+  RNA polymerases
+\item
+  Initiation, elongation, termination
+\item
+  mRNA processesing
+\end{itemize}
+
+\hypertarget{translation}{%
+\section*{20: Translation}\label{translation}}
+\addcontentsline{toc}{section}{20: Translation}
+
+\begin{itemize}
+\tightlist
+\item
+  mRNA travels to cytoplasm and meets ribosome
+\item
+  Start codon and initiation
+\item
+  Elongation, ribosome sites, tRNA
+\item
+  termination
+\item
+  protein processing
+\end{itemize}
+
+\hypertarget{why-rna-first}{%
+\section*{21: Why RNA first?}\label{why-rna-first}}
+\addcontentsline{toc}{section}{21: Why RNA first?}
+
+\begin{itemize}
+\tightlist
+\item
+  Summarize evidence for RNA first world
+\item
+  But, how the heck do we assemble polynucleotides without enzymes?
+\item
+  But how do we get proteins without information storage?
+\item
+  In truth, there were hundreds of millions of years for chemicals to interact in aqueous environments, meaning that life was probably built slowly in many different stages throughout this time
+\item
+  Once we have information storage, energy capture, and compartmentalization, we need to be able to reproduce
+\item
+  Evolution occurs when progeny have different genotypes than their progenitors--``descent w modification''
+\item
+  Individuals that have traits that allow them to survive and reproduce do, and those that can't die---introduce biological fitness
+\end{itemize}
+
+\hypertarget{reproduction}{%
+\chapter{Reproduction}\label{reproduction}}
+
+\hypertarget{asexual-reproduction-and-mitosis}{%
+\section*{22: Asexual Reproduction and Mitosis}\label{asexual-reproduction-and-mitosis}}
+\addcontentsline{toc}{section}{22: Asexual Reproduction and Mitosis}
+
+\begin{itemize}
+\tightlist
+\item
+  most unicellular organisms and prokaryotes reproduce asexually
+\item
+  overview of the types of asexual reproduction, focus on binary fission
+\item
+  eukaryotes have a similar process called mitosis
+\item
+  Overview of mitosis
+\end{itemize}
+
+\hypertarget{sexual-reproduction-and-meiosis}{%
+\section*{23: Sexual Reproduction and Meiosis}\label{sexual-reproduction-and-meiosis}}
+\addcontentsline{toc}{section}{23: Sexual Reproduction and Meiosis}
+
+\begin{itemize}
+\tightlist
+\item
+  Anisogamy and the strategy of sexual reproduction
+\item
+  The process of meiosis
+\item
+  How meiosis links to Punnet Squares
+\item
+  How recombination and errors in meiosis generate variation that natural selection can act upon
+\end{itemize}
+
+\hypertarget{why-sex-persists}{%
+\section*{24: Why Sex Persists}\label{why-sex-persists}}
+\addcontentsline{toc}{section}{24: Why Sex Persists}
+
+\begin{itemize}
+\tightlist
+\item
+  Why (theoretically speaking) sex makes no sense as a strategy
+\item
+  The two-fold cost of sex
+\item
+  Evolutionary advantages of sex
+\item
+  The origin of diploidy
+\item
+  Theories on the origin of sex
+\end{itemize}
+
+\hypertarget{life-through-time}{%
+\section*{25: Life Through Time}\label{life-through-time}}
+\addcontentsline{toc}{section}{25: Life Through Time}
+
+\begin{itemize}
+\tightlist
+\item
+  Individual organisms do not evolve, but populations do!
+\item
+  Once we have information storage, energy capture, compartmentalization, reproduction, AND MISTAKES---the experiment really begins!
+\item
+  Organisms are produced by organisms, some survive and reproduce more effectively than others, and characteristics change over time
+\item
+  As living organisms inhabit new areas on Earth and become isolated from other groups, speciation occurs
+\item
+  Over billions of years, the LUCA has given rise to all of us here on Earth, and all of us that came before but have gone extinct
+\end{itemize}
+
+\hypertarget{policies}{%
+\chapter*{Policies}\label{policies}}
+\addcontentsline{toc}{chapter}{Policies}
+
+\hypertarget{course-grading}{%
+\section*{Course grading}\label{course-grading}}
+\addcontentsline{toc}{section}{Course grading}
+
+Your grade will be based on the following components: attendance, participation, and the completion of your assignments. This means that doing well in this class depends on \textbf{showing up}, \textbf{being prepared}, and \textbf{putting effort} into assigned activities. \textbf{To receive a ``Satisfactory'' grade, you will need to demonstrate proficiency in two of the three areas outlined below.}
+
+On week 9, you will receive a progress report from me indicating your achievement in each of these three areas and feedback for improvement. You are also welcome to schedule a meeting with me at any time to discuss your progress in the course. For a running total of your grade, visit \href{https://uic.blackboard.com/ultra/courses/_207074_1/cl/outline}{My Grades in Blackboard}: there is one entry for each week, where you will earn one point for attending, one point for participating, and one point for turning in your assignment on time the following week.
+
+\hypertarget{rubric}{%
+\subsection*{Rubric}\label{rubric}}
+\addcontentsline{toc}{subsection}{Rubric}
+
+\begin{table}
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{5em}|>{\raggedright\arraybackslash}p{9em}>{\raggedright\arraybackslash}p{9em}>{\raggedright\arraybackslash}p{13em}}
+\toprule
+ & Attendance & Assignments & Participation\\
+\midrule
+\textbf{Proficient} & No more than two missed classes & No more than one missed assignment & Regular substantive and meaningful participation in class, indicating you have done the reading and are listening to your classmates\\
+\textbf{Developing} & No more than four missed classes & No more than two missed assignments & Occasional substantive and meaningful participation in class, indicating you have done the reading and are listening to your classmates\\
+\textbf{Emerging} & Missed more than four classes & More than two missed assignments & Little substantive participation in class\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{code-of-conduct}{%
+\section*{Code of conduct}\label{code-of-conduct}}
+\addcontentsline{toc}{section}{Code of conduct}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Be excellent to each other}. Our class is a community. It is vital that everyone feels welcome and that we all work together to create a safe space. We will be wrestling with some complex topics -- some personal -- and we will \emph{all} get the most out of this exercise if we create an environment where folks of every disposition feel comfortable sharing their experiences. This means listening to each other non-judgmentally and validating the experiences of others.
+\item
+  \textbf{Be considerate of each other}. We are all human beings -- we all have good days, bad days, feelings, and frustrations. Let's make sure all of our interactions in class start with this understanding. Honor the experiences and thoughts of others: we never know what someone else is going through, so let's always assume best intentions. This means we assume our classmates do not intend to hurt us with their words.
+\item
+  \textbf{Be respectful of each other}. Disagreement is natural. We are all different, and we should celebrate our differences and learn from one another! But we can only do this if we maintain respect for our classmates at all times. This means we always use kind words and inclusive language, and we never attack the character or experience of another person.
+\end{enumerate}
+
+\hypertarget{instructor-responsibilities}{%
+\section*{Instructor responsibilities}\label{instructor-responsibilities}}
+\addcontentsline{toc}{section}{Instructor responsibilities}
+
+As your instructor, I will also abide by the outlined code of conduct above. In addition, I will:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Foster an inclusive environment for every student.
+\item
+  Return assignments and enter grades within one week of their due date.
+\item
+  Respond to student emails within 24-hours.
+\item
+  Maintain an open-door policy and make myself available for student questions, concerns, or feedback via email, drop-in hours, or individual meetings.
+\item
+  Acknowledge that I will make mistakes, listen thoughtfully and respectfully to students that bring these mistakes to my attention, and change my behavior accordingly.
+\end{enumerate}
+
+\hypertarget{celebrating-diversity}{%
+\section*{Celebrating diversity}\label{celebrating-diversity}}
+\addcontentsline{toc}{section}{Celebrating diversity}
+
+UIC is one of the most diverse public research universities in the US. At UIC, diversity is not an end in itself, but a vehicle for advancing access, equity, and inclusion. Every student in this class will be honored and respected as an individual with distinct experiences, talents, and backgrounds. Students will be treated fairly regardless of race, religion, sexual orientation, gender identification, disability, socio-economic status, or national identity.
+
+When you fill out your welcome survey, please indicate your pronouns, your name if it differs from official records, and any other information you feel is important for me to know. Within the classroom, we will always abide by the code of conduct as outlined above. If you have any concerns or suggestions for improving the classroom climate, please do not hesitate to speak with me.
+
+\hypertarget{absences-and-late-work}{%
+\section*{Absences and late work}\label{absences-and-late-work}}
+\addcontentsline{toc}{section}{Absences and late work}
+
+In general, communicate with me as soon as you are aware you may miss class or miss an assignment. Since a good portion of your grade is based on attendance and participation, it is important to make every effort to show up to class. That said, you are free to miss two classes and one assignment for any reason with no impact to your grade. Beyond that, I will work with individual students on a case-by-case basis as circumstances arise. Speak with me so that we can create a plan.
+
+\hypertarget{mental-health-resources}{%
+\section*{Mental health resources}\label{mental-health-resources}}
+\addcontentsline{toc}{section}{Mental health resources}
+
+As an institution, UIC is invested in the mental health and well-being of all of our students, faculty, and staff. We believe that promoting the well-being of our students is a necessary and integral part of learning. If you are experiencing challenges related to your mental health or overall well-being, please utilize campus resources and reach out to faculty, mentors, advisors, peers, and counselors whom you trust. If you would like formal counseling services, the UIC Counseling Services is located in room 2010 of SSB (Student Services Building) and the phone number is 312-996-3490. Please do not hesitate to reach out to me if you are struggling in any way.
+
+\hypertarget{accessibility-resources}{%
+\section*{Accessibility resources}\label{accessibility-resources}}
+\addcontentsline{toc}{section}{Accessibility resources}
+
+It is of the utmost importance to me that you feel safe and valued, and that your academic, mental, physical, and emotional needs are met. Should you need specific accommodations, please reach out to me and we will work together to ensure the proper supports are put in place. If you have a letter of accommodation from a doctor, therapist, or the UIC Office of Disability, please give me a copy during the first week of class so I can incorporate any accommodations or modifications.
+
+UIC is committed to maintaining a barrier-free environment so that all students with disabilities can fully access programs, courses, services, and activities at UIC. Students with disabilities who require accommodations for access to and/or participation in this course must register with the Disability Resource Center (DRC). You may contact DRC at 312-413-2183 (phone) or 773-649-4535 (VP/relay) and consult the \href{https://drc.uic.edu/guide-to-accommodations/}{DRC Guide to Accommodations}.
+
+\end{document}

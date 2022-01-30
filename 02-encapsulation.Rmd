@@ -1,0 +1,39 @@
+# Encapsulation
+
+## 7: The Lipid World and Protocells {-}
+
++ Water on early Earth and the importance of polar covalent bonds
++ In aqueous environments lipids spontaneously form micelles and membranes
++ Why membranes are important for biological life
++ The second law of thermodynamics requires that the universe move in a direction in which entropy increases, yet life is distinguished by its great degree of organization. Therefore, a boundary is needed to separate life processes from non-living matter
++ Encapsulation enables increased solubility of the contained cargo within the capsule and storage of energy in an electrochemical gradient
++ As the lipid bilayer of membranes is impermeable to most hydrophilic molecules (dissolved by water), cells have membrane transport-systems that achieve the import of nutritive molecules as well as the export of waste
+
+## 8: Cell Membranes {-}
+
++ Cell theory and history
++ Cell membrane theory and history
++ Composition and fluid mosaic model
++ Permeability
+
+## 9: Prokaryotic Cells {-}
+
++ Prokaryotes thought to be the oldest cell types that evolved from some kind of protocell
++ The earliest prokaryotes found in the fossil record
++ Historical discovery of prokaryotes
++ A tour of the prokaryotic cell
++ Where prokaryotes fit on the tree of life
+
+## 10: Eukaryotic Cells {-}
+
++ The emergence of eukaryotes in Earth's history
++ They contain discrete organelles that can carry out tasks
++ A broad overview of eukaryotic organelles and functions
++ The evolutionary relationship between prokaryotic and eukaryotic cells
++ Compare and contrast prokaryotes and eukaryotes
+
+## 12: Why Membranes First? {-}
+
++ Summarize evidence for the lipid world
++ Why membranes are important for the origin of life
++ But encapsulaton alone does not account for the energy needed to maintain ordered structures in a universe driven toward entropy!

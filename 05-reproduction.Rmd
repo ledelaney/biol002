@@ -1,0 +1,31 @@
+# Reproduction
+
+## 22: Asexual Reproduction and Mitosis {-}
+
++ most unicellular organisms and prokaryotes reproduce asexually
++ overview of the types of asexual reproduction, focus on binary fission
++ eukaryotes have a similar process called mitosis
++ Overview of mitosis
+
+## 23: Sexual Reproduction and Meiosis {-}
+
++ Anisogamy and the strategy of sexual reproduction
++ The process of meiosis
++ How meiosis links to Punnet Squares
++ How recombination and errors in meiosis generate variation that natural selection can act upon
+
+## 24: Why Sex Persists {-}
+
++ Why (theoretically speaking) sex makes no sense as a strategy
++ The two-fold cost of sex
++ Evolutionary advantages of sex
++ The origin of diploidy
++ Theories on the origin of sex
+
+## 25: Life Through Time {-}
+
++ Individual organisms do not evolve, but populations do!
++ Once we have information storage, energy capture, compartmentalization, reproduction, AND MISTAKES---the experiment really begins!
++ Organisms are produced by organisms, some survive and reproduce more effectively than others, and characteristics change over time
++ As living organisms inhabit new areas on Earth and become isolated from other groups, speciation occurs
++ Over billions of years, the LUCA has given rise to all of us here on Earth, and all of us that came before but have gone extinct

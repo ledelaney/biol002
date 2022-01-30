@@ -1,0 +1,22 @@
+---
+knit: "bookdown::render_book"
+title: "Biol 002: Cellular Basis of Life"
+quarter: "Spring 2022"
+author: "Lucy Delaney"
+description: "Course materials for Biol 002 Cellular Basis of Life, Spring 2022."
+url: 'https\://ledelaney.org/teaching/2022/spring/biol002/'
+github-repo: ledelaney/biol002
+cover-image: images/flamingo.png
+site: bookdown::bookdown_site
+documentclass: report
+---
+
+# Welcome to Biol 002 Lecture! {-}
+
+<div class="boxed">
+**Instructor:** Dr. Lucy Delaney (`lucyd@ucr.edu`)  
+**Time:** MWF 5:00pm-5:50pm  
+**Classroom:** Bournes Hall B118  
+**Office Hours:** TBD</div>
+
+<!-- ![](images/flamingo.png){.cover width="38%"}  -->

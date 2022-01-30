@@ -1,0 +1,61 @@
+# The Birth of the Universe
+
+>In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.  
+_Douglas Adams, The Restauran at the End of the Universe_
+
+## 1: The Big Bang {-}
+
++ Life exists as it does because of events that occurred 13 billion years ago
++ The birth of the universe dictated the physical laws that govern our construction
++ To understand life we must first understand the physical laws of the universe
++ What is the universe?
++ Is there a multiverse?
++ The singularity that birthed the universe
++ Inflation and the four fundamental forces
++ Cooling creates antimatter and matter, matter prevails
+
+## 2: The Formation of Matter {-}
+
++ Matter prevails
++ What is matter?
++ The majority of ordinary matter in the universe is found in atomic nuclei, which are made of neutrons and protons
++ Describe an atom and the periodic table
++ Describe how nuclear fusion works and how stars create heavier elements
+
+## 3: Our Pale Blue Dot {-}
+
++ Asymmetry after the Big Bang creates gas pockets that birth galaxies
++ Our galaxy is very old
++ Talk about the Milky Way, the SMBH at the center, and the birth of our sun
++ How supernova leave remnants of metallic elements suitable for terrestrial plants
++ The Grand Tack and Jupiter
++ Our inner solar system
+
+## 4: The Scene on Early Earth {-}
+
++ The Earth is formed 4.5 billion years ago
++ The giant impact hypothesis states that shortly after formation of an initial crust, the proto-Earth was impacted by a smaller protoplanet, which ejected part of the mantle and crust into space and created the Moon
++ The moon stabilizes the Earth (important for life)
++ Late heavy bombardment
++ First land
++ First oceans and atmosphere---water is important for life on Earth
++ Life emerges from abiotic molecules interacting in the ocean
+
+## 5: Defining Life {-}
+
++ There is currently no consensus on what life actually is
++ Why is it so difficult to define life?
++ Historical perspectives
++ Life from a biological perspective
++ Life from a physics perspective
++ Viruses and other confusing entities
+
+## 6: Biological Molecules {-}
+
++ All living (whatever life is) organisms are essentially made of the same stuff
++ Carbohydrates provide energy
++ Nucleic acids store information
++ Proteins made of amino acids do it all
++ Lipids, while not technically polymers, form all our membranes
++ Miller and Urey showed you could make some of this stuff based on what was available on early earth
+

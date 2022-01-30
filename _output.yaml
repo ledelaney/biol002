@@ -1,0 +1,21 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#339933"
+  repo: https://github.com/ledelaney/biol002
+  includes:
+    in_header: [fa_script.html]
+  css: biol002.css
+
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+    # before_body: before_body.tex
+    # after_body: after_body.tex
+  latex_engine: "xelatex"
+  toc: true
+  geometry_opts: "margin=1in"
+  keep_tex: true
+  
+
+
+

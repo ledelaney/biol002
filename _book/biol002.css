@@ -1,0 +1,49 @@
+.book .book-header h1 {
+  opacity: 1;
+  text-align: left;
+}
+
+#header .title {
+  margin-bottom: 0em;
+}
+#header h4.author {
+  margin: 0;
+  color: #666;
+}
+#header h4.author em {
+  font-style: normal;
+}
+
+.boxed {
+  background: whitesmoke;
+  border: thin solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+#center {
+  text-align: center;
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
