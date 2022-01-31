@@ -15,6 +15,7 @@
 + Cell membrane theory and history
 + Composition and fluid mosaic model
 + Permeability
++ Diffusion, osmosis, and transport
 
 ## 9: Prokaryotic Cells {-}
 

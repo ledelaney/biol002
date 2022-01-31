@@ -1,7 +1,7 @@
 # The Birth of the Universe
 
 >In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.  
-_Douglas Adams, The Restauran at the End of the Universe_
+_Douglas Adams, The Restaurant at the End of the Universe_
 
 ## 1: The Big Bang {-}
 
@@ -19,7 +19,7 @@ _Douglas Adams, The Restauran at the End of the Universe_
 + Matter prevails
 + What is matter?
 + The majority of ordinary matter in the universe is found in atomic nuclei, which are made of neutrons and protons
-+ Describe an atom and the periodic table
++ Describe an atom and why electrons are important for chemical behavior
 + Describe how nuclear fusion works and how stars create heavier elements
 
 ## 3: Our Pale Blue Dot {-}
@@ -30,16 +30,16 @@ _Douglas Adams, The Restauran at the End of the Universe_
 + How supernova leave remnants of metallic elements suitable for terrestrial plants
 + The Grand Tack and Jupiter
 + Our inner solar system
++ The Earth is formed 4.5 billion years ago
 
 ## 4: The Scene on Early Earth {-}
 
-+ The Earth is formed 4.5 billion years ago
 + The giant impact hypothesis states that shortly after formation of an initial crust, the proto-Earth was impacted by a smaller protoplanet, which ejected part of the mantle and crust into space and created the Moon
 + The moon stabilizes the Earth (important for life)
 + Late heavy bombardment
 + First land
 + First oceans and atmosphere---water is important for life on Earth
-+ Life emerges from abiotic molecules interacting in the ocean
++ Life emerges from abiotic molecules interacting in water
 
 ## 5: Defining Life {-}
 

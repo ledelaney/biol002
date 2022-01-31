@@ -6,8 +6,8 @@ rmd_files: [
   "02-encapsulation.Rmd",
   "03-metabolism.Rmd",
   "04-heredity.Rmd",
-  "05-reproduction.Rmd",
-  "policies.Rmd"
+  "05-reproduction.Rmd"
+  #"policies.Rmd"
 ]
 
 before_chapter_script: "_common.R"
