@@ -3,12 +3,14 @@ knit: "bookdown::render_book"
 title: "Biol 002: Cellular Basis of Life"
 quarter: "Spring 2022"
 author: "Lucy Delaney"
+date: "Spring 2022"
 description: "Course materials for Biol 002 Cellular Basis of Life, Spring 2022."
 url: 'https\://ledelaney.org/teaching/2022/spring/biol002/'
 github-repo: ledelaney/biol002
-cover-image: images/flamingo.png
+cover-image: images/poppy.jpeg
 site: bookdown::bookdown_site
 documentclass: report
+footnotes_inline: TRUE
 ---
 
 # Welcome to Biol 002 Lecture! {-}
@@ -19,4 +21,12 @@ documentclass: report
 **Classroom:** Bournes Hall B118  
 **Office Hours:** TBD</div>
 
-<!-- ![](images/flamingo.png){.cover width="38%"}  -->
+
+
+![Death And Life (1908) by Gustav Klimt](images/klimt.jpeg){width="48%"}
+
+
+For all of our differences, we have so much in common. We are all human beings. We are all made up of the same proteins, our genes constructed with the same DNA. We are all together on this rock hurtling through space, and we are all powered by energy from the same star. But where did this rock come from? Why are we hurtling around it? How did life originate? What does it mean to be "alive"? In this course, we will wrestle with these and other questions, exploring the answers we've uncovered and the ones that we still seek.
+
+This is our informal course textbook, [online](https://ledelaney.org/teaching/2022/spring/biol002) or in [PDF](https://ledelaney.org/teaching/2022/spring/biol002/_main.pdf). You can access the materials for class on [the website](https://ledelaney.org/teaching/2022/spring/biol002), or through [Canvas](https://elearn.ucr.edu/). Unit material---including the reading and slides---will be available the week before we begin the unit. Check out the [syllabus](https://drive.google.com/file/d/1soUnmkct8myyRYeWrvKTqa6grq7ZS_jy/view?usp=sharing) for more details.
+

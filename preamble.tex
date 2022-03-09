@@ -6,7 +6,7 @@
 \usepackage[margin=1.1in]{geometry}
 \usepackage{fontspec}
 \setmainfont{MinionPro-Regular.otf}[
-Path = /Library/Fonts/minion-pro-cufonfonts/,
+Path = /Users/lucydelaney/Library/Fonts/,
 BoldFont = MinionPro-Bold.otf,
 ItalicFont = MinionPro-It.otf,
 BoldItalicFont  = MinionPro-BoldIt.otf]
@@ -81,6 +81,10 @@ colframe=white!75!black,colbacktitle=black!65!white, toptitle=2pt, before={\vspa
     citecolor = black
 }
 
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+
 %Need all these for graphics and tables
 \usepackage{marginnote}
 \usepackage{subfig}
@@ -91,6 +95,7 @@ colframe=white!75!black,colbacktitle=black!65!white, toptitle=2pt, before={\vspa
 \usepackage{wallpaper}
 \usepackage{float}
 
+\renewcommand\chaptername{Unit}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
 
 %Header and footer junk

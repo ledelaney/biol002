@@ -6,18 +6,42 @@ bookdown::pdf_book:
   latex_engine: "xelatex"
   toc: true
   geometry_opts: "margin=1in"
-  keep_tex: true
+  keep_tex: false
+
+bookdown::gitbook:
+  css: biol002.css
+  includes: 
+    in_header: |
+      fa_script.html
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./"><b>Spring 2022: Cellular Basis of Life</b></a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">powered by <i class="fab fa-r-project"></i> and bookdown</a></li>
+    view: https://github.com/ledelaney/biol002/blob/master/%s
+    toolbar:
+      position: fixed
+    edit: null
+    download: yes
+    search: yes
+    sharing:
+      facebook: no
+      whatsapp: no
+      github: no
+
+
+
 
 bookdown::bs4_book:
   theme:
-    primary: "#339933"
+    primary: "#8F3D49"
   repo: https://github.com/ledelaney/biol002
   includes:
     in_header: [fa_script.html]
   css: biol002.css
-
-
-  
+  footnotes_inline: FALSE
 
 
 
