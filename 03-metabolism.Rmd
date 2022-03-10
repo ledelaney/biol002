@@ -116,6 +116,8 @@ Enzymes bind to the **active site** of their substrate. This typically induces a
 
 In large part, enzymes can be regulated through inhibition. This essentially means preventing the enzyme from functioning in some manner. We will cover the two main kinds of enzyme inhibition, although there are others.
 
+![Enzymes are often regulated by inhibitors, that alter the enzyme's ability to catalyze reactions.](images/inhibition.jpeg){width="50%"}
+
 **Competitive inhibition**. A competitive inhibitor is a molecule that greatly resembles the substrate. If the competitive inhibitor is present, it will bind to the active site of the enzyme and prevent the substrate from binding. If the substrate concentration is high enough (much higher than the concentration of the inhibitor) then this kind of competition can be overcome.
 
 **Non-competitive inhibition**. A non-competitive inhibitor binds to the enzyme in a location other than the active site. In doing so, it reduces the catalytic efficiency of the enzyme. The substrate can still bind, but this no longer has the same effect on the resulting chemical reaction. This kind of inhibition cannot be overcome with high concentrations of substrate.
