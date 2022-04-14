@@ -10,7 +10,6 @@ github-repo: ledelaney/biol002
 cover-image: images/poppy.jpeg
 site: bookdown::bookdown_site
 documentclass: report
-footnotes_inline: TRUE
 ---
 
 # Welcome to Biol 002 Lecture! {-}
@@ -18,8 +17,8 @@ footnotes_inline: TRUE
 <div class="boxed">
 **Instructor:** Dr. Lucy Delaney (`lucyd@ucr.edu`)  
 **Time:** MWF 5:00pm-5:50pm  
-**Classroom:** Bournes Hall B118  
-**Office Hours:** TBD</div>
+**Classroom:** Bourns Hall B118  
+**Office Hours:** Tuesdays at 5pm and before class</div>
 
 
 

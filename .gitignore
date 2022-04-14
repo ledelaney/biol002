@@ -4,6 +4,8 @@
 04-heredity.Rmd
 05-reproduction.Rmd
 
+_book/
+
 # History files
 .Rhistory
 .Rapp.history

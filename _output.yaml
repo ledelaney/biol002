@@ -20,6 +20,10 @@ bookdown::gitbook:
         <li><a href="./"><b>Spring 2022: Cellular Basis of Life</b></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">powered by <i class="fab fa-r-project"></i> and bookdown</a></li>
+        <ul>
+        <li> (<script>document.write("Modified: " + document.lastModified +"");</script>) </li>
+        </ul>
+        <li><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target = "_blank"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a></li>
     view: https://github.com/ledelaney/biol002/blob/master/%s
     toolbar:
       position: fixed
