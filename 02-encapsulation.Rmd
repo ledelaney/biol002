@@ -200,7 +200,7 @@ But before we get into the complicated family dynamics of cells, let's first tak
 
 ### The structure of eukaryotes {-}
 
-You probably all know that the **mitochondria** is the powerhouse of the cell. I think that's just about the only fact that everyone remembers from high school biology. We won't focus on that organelle here, except to confirm that yes, it is the powerhouse of the cell. We will discuss it in more detail in the next unit when we learn about metabolism. Plant cells also have mitochondria, but they slso have something called a **chloroplast**. These organelles are the site of photosynthesis (the process that allows plants to capture energy from the sun and turn it into chemical energy), so we will also discuss that in Unit 3. 
+You probably all know that the **mitochondria** is the powerhouse of the cell. I think that's just about the only fact that everyone remembers from high school biology. We won't focus on that organelle here, except to confirm that yes, it is the powerhouse of the cell. We will discuss it in more detail in the next unit when we learn about metabolism. Plant cells also have mitochondria, but they also have something called a **chloroplast**. These organelles are the site of photosynthesis (the process that allows plants to capture energy from the sun and turn it into chemical energy), so we will also discuss that in Unit 3. 
 
 
 ![The nucleus, the ER, the Golgi apparatus, various vesicles, lysosomes, and the plasma membrane are all part of the network of membranes that make up the endomembrane system in eukaryotes. ([Image source](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Endomembrane_system_diagram_en.svg/520px-Endomembrane_system_diagram_en.svg.png).)](images/endomembrane.png){width="42%"}
