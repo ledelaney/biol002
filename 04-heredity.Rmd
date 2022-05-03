@@ -74,7 +74,7 @@ And the second reason is that for centuries, only certain people were afforded t
 
 But I digress.
 
-### How it works
+### How it works {-}
 
 One of the first requirements of the transfer of heritable information is that it must be easily copied. And it can't be a janky copy either; it must be a really, really excellent copy, also called a high-fidelity copy. Your cells don't last forever, not any of them. So what keeps you living and growing is that those cells make copies. Your skin sheds, your hair grows, you get cut while you're cooking dinner---all that stuff requires more cells, and every time a cell gets made, DNA must be copied. Can you imagine if DNA was copied poorly like a copy machine from 1995? Too many mistakes and our cells would simply begin to fall apart.
 
